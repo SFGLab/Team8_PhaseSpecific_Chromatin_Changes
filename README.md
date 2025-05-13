@@ -4,8 +4,8 @@
 graph TD;
     RNA(scRNA-seq)-->|Seurat, Scanpy|T(multidomentional tensor);
     ATAC(scATAC-seq)-->T;
-    HiC(sc contacts)-->T;
-    HiC(sc contacts)-->3D(3D models);
+    HiC(sc contacts)-->|scHiCyclePred, CIRCLET|T;
+    HiC(sc contacts)-->|ChromMovie|3D(3D models);
     3D-->STdata(spatiotemporal data);
     T-->STdata;
     T-->classification(Classification);
