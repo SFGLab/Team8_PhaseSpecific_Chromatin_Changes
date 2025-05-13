@@ -1,9 +1,11 @@
-# Team8_PhaseSpecific_Chromatin_Changes
+# Team8: PhaseSpecific Chromatin Changes
+
+## Hackathon work flowchart
 
 ```mermaid
 graph TD;
     RNA(scRNA-seq)-->|Seurat, Scanpy|T(multidomentional tensor);
-    ATAC(scATAC-seq)-->T;
+    ATAC(scATAC-seq)-->|ArchR|T;
     HiC(sc contacts)-->|scHiCyclePred, CIRCLET|T;
     HiC(sc contacts)-->|ChromMovie|3D(3D models);
     3D-->STdata(spatiotemporal data);
