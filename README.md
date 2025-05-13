@@ -2,7 +2,7 @@
 
 ```mermaid
 graph TD;
-    RNA(scRNA-seq)-->T(multidomentional tensor);
+    RNA(scRNA-seq)-->|Seurat, Scanpy|T(multidomentional tensor);
     ATAC(scATAC-seq)-->T;
     HiC(sc contacts)-->T;
     HiC(sc contacts)-->3D(3D models);
