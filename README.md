@@ -46,7 +46,7 @@ graph TD;
 
 Krzysztof Banecki - team lead, 3D modeling, chromatin structure analysis
 
-Rafał Wójcicki - RNA-seq analysis
+Rafał Wóycicki - RNA-seq analysis
 
 Alicja M. Olszewska - RNA-seq analysis
 
