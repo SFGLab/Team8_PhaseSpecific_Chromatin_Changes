@@ -15,9 +15,8 @@ graph TD;
     Cluster-->FDA(FDA);
 ```
 
-### Aggregation of average gene expresion per Phase and Pseudotime of K562 data (Agregation.ipynb)
-```mermaid
-graph TD;
+#### Aggregation of average gene expresion per Phase and Pseudotime of K562 data (Agregation.ipynb)
+
 1. Load statistics file after Seurat – only filtered cells left, which have both the ATAC and RNAseq signal. Infor,mation about Phase of the cells and Pseudotime.
 2. Loading EnsemblID 2 Gene Name mapping – Gene names downloaded friom Ensembl Biomart.
 3. Getting gene counts per cell from cellranger BAM file – parsing CB and GX fields (from uniq UMIs)
@@ -25,24 +24,3 @@ graph TD;
 5. Normalization per read counts per cell – Normalize gene counts per cell to 10,000 (Counts per 10k).
 6. Aggregation by Phase and Pseudotime – Compute average gene expression per cell cycle phase.
 7. Working on graphs.
-```
-
-```mermaid
-flowchart TD
-    A[1. Load Seurat stats\n(Phase & Pseudotime)]
-    B[2. Load EnsemblID → Gene mapping]
-    C[3. Parse BAM counts\n(CB, GX, UMIs)]
-    D[4. Create expression matrix]
-    E[5. Normalize per 10K]
-    F[6. Aggregate by Phase & Pseudotime]
-    G[7. Visualize & Graphs]
-
-    A --> D
-    B --> D
-    C --> D
-    D --> E
-    E --> F
-    F --> G
-```
-   ![detailed_expression_workflow_vertical](https://github.com/user-attachments/assets/ce48f852-f750-4c14-88a3-284db9bb90e0)
-
