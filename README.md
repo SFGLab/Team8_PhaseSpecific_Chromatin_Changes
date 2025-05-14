@@ -1,16 +1,16 @@
 # Team8: PhaseSpecific Chromatin Changes
 
-## Project Objective
+## 🎯Project Objectives
 
 Chromatin undergoes dynamic structural changes throughout the cell cycle to regulate DNA accessibility, replication, and segregation. These transformations ensure that the genome remains transcriptionally active when required, is accurately replicated, and properly segregated during cell division. While the general principles of chromatin conformation changes are gradually being uncovered, much less is known about the specific structural transitions that may drive chromatin organization throughout the cell cycle.
 
 Our project aims to comprehensively integrate multi-omics datasets—including gene expression, chromatin accessibility, and contact maps—to advance the understanding of cell cycle phase-specific chromatin dynamics. Coupled with 3D genome modeling, our approach seeks to uncover novel and distinct chromatin conformational changes along the trajectory of cell cycle progression and other genomic processes such as cellular maturation. We employ state-of-the-art 3D modeling techniques that incorporate temporal information from the cell cycle, alongside cutting-edge methods for multi-omics integration, clustering, and pattern recognition. This combined strategy is designed to reveal common principles and patterns underlying chromatin structural organization within the cell nucleus.
 
-## Dataset
+## 📦 Dataset
 
 The method was primarily tested on the ChAIR data set from (Chai et al. 2025) which combines contacts from ChIA-PET methodology, scRNA-seq and scATAC-seq obtained simultaneously for thousands of cells along the cell cycle trajectory. Our algorithms are also compatible with other similar multi-omics data sets. Similarily the 3D modeling strategy ChromMovie is applicable to different types of single cell contact data.
 
-## Tools & Dependencies
+## 🛠 Tools & Dependencies
 
 ```
 ArchR
@@ -23,7 +23,7 @@ ChromMovie
 
 
 
-## Hackathon work flowchart
+## 📉 Hackathon work flowchart
 
 ```mermaid
 graph TD;
@@ -38,7 +38,7 @@ graph TD;
     Cluster-->FDA(FDA);
 ```
 
-## Contributions
+## 🧾 Contributions
 
 Krzysztof Banecki - team lead, 3D modeling, chromatin structure analysis
 
