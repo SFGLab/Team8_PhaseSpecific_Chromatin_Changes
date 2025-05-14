@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< Updated upstream
       <module fileurl="file://$PROJECT_DIR$/.idea/Team8_PhaseSpecific_Chromatin_Changes.iml" filepath="$PROJECT_DIR$/.idea/Team8_PhaseSpecific_Chromatin_Changes.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/Team8.iml" filepath="$PROJECT_DIR$/.idea/Team8.iml" />
+>>>>>>> Stashed changes
     </modules>
   </component>
 </project>
