@@ -2,8 +2,9 @@
 
 ## Project Objective
 
-Our projects aims at the comprehensive integration of multi-omics data sets combining information about gene expression, chromatin accessibility and contact data. Together with 3D modeling we aim at discovering unique and novel structural chromatin conformational changes along the cell cycle progression trajectory or other genomic processes such as cell maturation. We use state of the art solutions in 3D modeling together with the best models for multi-omics data analysis, clustering and pattern detection algorithms.
+Chromatin undergoes dynamic structural changes throughout the cell cycle to regulate DNA accessibility, replication, and segregation. These transformations ensure that the genome remains transcriptionally active when required, is accurately replicated, and properly segregated during cell division. While the general principles of chromatin conformation changes are gradually being uncovered, much less is known about the specific structural transitions that may drive chromatin organization throughout the cell cycle.
 
+Our project aims to comprehensively integrate multi-omics datasets—including gene expression, chromatin accessibility, and contact maps—to advance the understanding of cell cycle phase-specific chromatin dynamics. Coupled with 3D genome modeling, our approach seeks to uncover novel and distinct chromatin conformational changes along the trajectory of cell cycle progression and other genomic processes such as cellular maturation. We employ state-of-the-art 3D modeling techniques that incorporate temporal information from the cell cycle, alongside cutting-edge methods for multi-omics integration, clustering, and pattern recognition. This combined strategy is designed to reveal common principles and patterns underlying chromatin structural organization within the cell nucleus.
 
 ## Dataset
 
@@ -36,6 +37,14 @@ graph TD;
     STdata-->Cluster(clusterization, AE, etc.);
     Cluster-->FDA(FDA);
 ```
+
+## Contributions
+
+Krzysztof Banecki - team lead, 3D modeling, chromatin structure analysis
+Rafał Wójcicki - RNA-seq analysis
+Alicja M. Olszewska - RNA-seq analysis
+Konrad Dębski - ATAC-seq analysis
+Jatin Shrinet - scChIA-PET analysis
 
 #### Aggregation of average gene expresion per Phase and Pseudotime of K562 data (Agregation.ipynb)
 
