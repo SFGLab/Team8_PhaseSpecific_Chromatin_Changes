@@ -41,9 +41,13 @@ graph TD;
 ## Contributions
 
 Krzysztof Banecki - team lead, 3D modeling, chromatin structure analysis
+
 Rafał Wójcicki - RNA-seq analysis
+
 Alicja M. Olszewska - RNA-seq analysis
+
 Konrad Dębski - ATAC-seq analysis
+
 Jatin Shrinet - scChIA-PET analysis
 
 #### Aggregation of average gene expresion per Phase and Pseudotime of K562 data (Agregation.ipynb)
