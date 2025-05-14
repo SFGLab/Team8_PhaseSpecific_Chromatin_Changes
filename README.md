@@ -12,8 +12,6 @@ The method was primarily tested on the ChAIR data set from (Chai et al. 2025) wh
 ## 🛠️ Tools & Dependencies
 
 ```
-seurat
-Scanpy
 ArchR
 scHiCyclePred
 CIRCLET
