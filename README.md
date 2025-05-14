@@ -9,6 +9,19 @@ Our projects aims at the comprehensive integration of multi-omics data sets comb
 
 The method was primarily tested on the ChAIR data set from (Chai et al. 2025) which combines contacts from ChIA-PET methodology, scRNA-seq and scATAC-seq obtained simultaneously for thousands of cells along the cell cycle trajectory. Our algorithms are also compatible with other similar multi-omics data sets. Similarily the 3D modeling strategy ChromMovie is applicable to different types of single cell contact data.
 
+## 🛠️ Tools & Dependencies
+
+```
+seurat
+Scanpy
+ArchR
+scHiCyclePred
+CIRCLET
+ChromMovie
+```
+
+## 🧠 Methodology
+
 
 
 ## Hackathon work flowchart
