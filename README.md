@@ -1,5 +1,7 @@
 # Team8: PhaseSpecific Chromatin Changes
 
+![animated_plot](https://github.com/user-attachments/assets/6a9a2886-fc40-4399-b09f-acba1fca916e)
+
 ## Project Objective
 
 Our projects aims at the comprehensive integration of multi-omics data sets combining information about gene expression, chromatin accessibility and contact data. Together with 3D modeling we aim at discovering unique and novel structural chromatin conformational changes along the cell cycle progression trajectory or other genomic processes such as cell maturation. We use state of the art solutions in 3D modeling together with the best models for multi-omics data analysis, clustering and pattern detection algorithms.
