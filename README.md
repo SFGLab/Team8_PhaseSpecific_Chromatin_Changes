@@ -29,13 +29,13 @@ graph TD;
 
 ```mermaid
 flowchart TD
-    A[1. Load filtered Seurat stats<br/>(Phase, Pseudotime)]
-    B[2. Load EnsemblID → Gene Name mapping<br/>(from Biomart)]
-    C[3. Parse gene counts from BAM<br/>(CB, GX, UMIs)]
-    D[4. Create expression matrix for filtered cells]
-    E[5. Normalize per 10K<br/>(Counts per cell)]
-    F[6. Aggregate by Phase and Pseudotime]
-    G[7. Visualization & Graphs]
+    A[1. Load Seurat stats\n(Phase & Pseudotime)]
+    B[2. Load EnsemblID → Gene mapping]
+    C[3. Parse BAM counts\n(CB, GX, UMIs)]
+    D[4. Create expression matrix]
+    E[5. Normalize per 10K]
+    F[6. Aggregate by Phase & Pseudotime]
+    G[7. Visualize & Graphs]
 
     A --> D
     B --> D
