@@ -38,7 +38,7 @@ graph TD;
     Cluster-->FDA(FDA);
 ```
 
-## Future steps
+## 🏗 Future steps
 
 1. Parameter tuning
 
@@ -64,7 +64,7 @@ Jatin Shrinet - scChIA-PET analysis
 6. Aggregation by Phase and Pseudotime – Compute average gene expression per cell cycle phase.
 7. Working on graphs.
 
-## References
+## 📌 References
 
 1. Haoxi Chai, Xingyu Huang, Guangzhou Xiong, Jiaxiang Huang, Katarzyna Karolina Pels, Lingyun Meng, Jin Han, Dongmei Tang, Guanjing Pan, Liang Deng, Qin Xiao, Xiaotao Wang, Meng Zhang, Krzysztof Banecki, Dariusz Plewczynski, Chia-Lin Wei, Yijun Ruan, Tri-omic mapping revealed concerted dynamics of 3D epigenome and transcriptome in brain cells, Nature Methods (2025). https://doi.org/10.1038/s41592-025-02658-7
 
