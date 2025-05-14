@@ -26,5 +26,23 @@ graph TD;
 6. Aggregation by Phase and Pseudotime – Compute average gene expression per cell cycle phase.
 7. Working on graphs.
 ```
+
+```mermaid
+flowchart TD
+    A[1. Load filtered Seurat stats<br/>(Phase, Pseudotime)]
+    B[2. Load EnsemblID → Gene Name mapping<br/>(from Biomart)]
+    C[3. Parse gene counts from BAM<br/>(CB, GX, UMIs)]
+    D[4. Create expression matrix for filtered cells]
+    E[5. Normalize per 10K<br/>(Counts per cell)]
+    F[6. Aggregate by Phase and Pseudotime]
+    G[7. Visualization & Graphs]
+
+    A --> D
+    B --> D
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+
    ![detailed_expression_workflow_vertical](https://github.com/user-attachments/assets/ce48f852-f750-4c14-88a3-284db9bb90e0)
 
