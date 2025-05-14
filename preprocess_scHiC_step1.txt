@@ -1,0 +1,29 @@
+####### The aim is to summarise the HiC contacts to be use for cell cycle phasing
+
+
+##### The contact files (after downloading from google drive and extracting) were in different folders. 
+##### So all the text files were moved to single folder (k62_all)
+
+find . -type f -name "*.txt"|xargs -I '{}' scp {} ../k62_all/
+
+cat *.txt >>merged_k62_all.txt  ## merged file, contacts
+
+##### A list of Unique single cell names were generated for spliting the contacts into their respective files with the uniq cell names (column 7 IDs)
+
+cat *.txt|cut -f 7|uniq >>../uniq_cell_name.txt
+
+cat ../uniq_cell_name.txt |sort|uniq >> ../final_uniq_cell_name.txt
+
+##### Next step is to keep the merged file and final_uniq_cell_name.txt in a single folder and run the bash script "k62_schic.sh" from inside that directory 
+
+bash k62_schic.sh	##### (Took help from CHATGPT to make it faster)
+
+##### The script will generate two directories:
+## 1. name_chunks: the single cell name list will be divided into chunks of 4000 names in a file and all the file will be saved here.
+## 2. matched_output: After matching the names to the contact, each single cell file with their corresponding names will be saved in this directory.
+
+##### Final step is to run the bash script on "matched_output" directory to generate the summary file with contact information. 
+
+echo -e "cell_ID""\t""cis_25KB_2MB""\t""cis_2MB_12MB""\t""cis_gt_12MB""\t""cis_less_25KB""\t""trans" >> ../contacts_summary_scHiC_39K_cells.txt; for i in $(find ./matched_output -type f -name "*.txt");do name=$(basename -s ".txt" $i);b=$(awk '{if(($1==$4) && (($5-$3)<25000)){print ("cis_less_25KB", ($5-$3))} else {if(($1==$4) && ((($5-$3)>25000) && (($5-$3)<2000000))){print ("cis_25KB_2MB", ($5-$3))}else {if(($1==$4) && ((($5-$3)>2000000) && (($5-$3)<12000000))){print ("cis_2MB_12MB",($5-$3))} else {if(($1==$4) && ((($5-$3)>12000000))){print ("cis_gt_12MB", ($5-$3))} else {if($1!=$4){print ("trans", ($5-$3))}}}}}}' $i | awk '{print $1}'|sort |uniq -c|awk '{print $1}');echo -e $name"\t"$b;done >> ../contacts_summary_scHiC_39K_cells.txt
+
+sed -i -e 's/ /\t/ig' ../contacts_summary_scHiC_39K_cells.txt
