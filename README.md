@@ -85,11 +85,12 @@ The output to our methods consists of a number of structures representing typica
 
 ## 🏗 Future steps
 
-1. Parameter tuning
-2. Better integration of the multi-omics data (scRNA-seq, scATAC-seq, scChIA-PET,...)
-3. Explore better characterizations of chromatin conformational changes
-4. Explore better clustering algorithms
-5. Explore the algorithms for determining representative structures via Functional Data Analysis (FDA) and other methods
+1. Model validation
+2. Parameter tuning
+3. Better integration of the multi-omics data (scRNA-seq, scATAC-seq, scChIA-PET,...)
+4. Explore better characterizations of chromatin conformational changes
+5. Explore better clustering algorithms
+6. Explore the algorithms for determining representative structures via Functional Data Analysis (FDA) and other methods
 
 ## 🧾 Contributions
 
