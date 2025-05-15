@@ -23,4 +23,10 @@ graph TD;
 4. Creating expression matrix for filtered cells – Merge metadata with expression matrix.
 5. Normalization per read counts per cell – Normalize gene counts per cell to 10,000 (Counts per 10k).
 6. Aggregation by Phase and Pseudotime – Compute average gene expression per cell cycle phase.
-7. Working on graphs.
+
+#### Adding ATACseq data to K562:
+1. ATACseq script first takes ATAC seq signal file and annotate it with gene regions +- 500 bp from gene TSS.
+2. The ATAC singals as 1/0 are normalized per cell and scaled by 10K factor, same as in scRNAseq analysis.
+3. The ATAC signal data are filtered to contain only the cells same as in the Seurat stat file, so have same cells as in RNAseq analysis.
+4. The ATAC signal data ate aggregated by Metacell (the mean signal per Metacell, so Pseudotime).,
+5. The ATAC-seq and RNA-seq data are combined together for common genes.
