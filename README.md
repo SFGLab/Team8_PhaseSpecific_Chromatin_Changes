@@ -68,7 +68,7 @@ The output to our methods consists of a number of structures representing typica
 
 Krzysztof Banecki - team lead, 3D modeling, chromatin structure analysis
 
-Rafał Wóycicki - RNA-seq analysis
+Rafał Wóycicki - RNA-seq analysis, ATAC-seq analysis
 
 Alicja M. Olszewska - RNA-seq analysis
 
