@@ -38,7 +38,7 @@ graph TD;
     Cluster-->FDA(FDA);
 ```
 
-## Output
+## 🧬 Output
 
 The output to our methods consists of a number of structures representing typical chromatin conformational changes detected in the studied case. The files are saved in the `.cif` format with additional `.gif` visualization files.
 
@@ -51,6 +51,10 @@ The output to our methods consists of a number of structures representing typica
 ## 🏗 Future steps
 
 1. Parameter tuning
+2. Better integration of the multi-omics data (scRNA-seq, scATAC-seq, scChIA-PET,...)
+3. Explore better characterizations of chromatin conformational changes
+4. Explore better clustering algorithms
+5. Explore the algorithms for determining representative structures via Functional Data Analysis (FDA) and other methods
 
 ## 🧾 Contributions
 
