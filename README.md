@@ -51,6 +51,22 @@ graph TD;
     Cluster-->FDA(FDA);
 ```
 
+## ⚡ Example use
+
+In order to analyse your structures saved in the same format as the output of `ChromMovie`, start with the following preprocessing:
+
+```python -m modeling_00_preprocess --input "path/to/files_cif"```
+
+This preprocessing, creates `pandas` data frames for further analysis. Subsequently, the motifs are extracted from this data the following way:
+
+```python -m modeling_01_extract_motifs --input "path/to/files_pd" --output "path/to/results_kmers" -l 10 -w 5```
+
+Finally, the clustering analysis and the centroids of each cluster can be extracted with a script:
+
+```python -m modeling_02_clustering --input  "path/to/results_kmers/result.npy" --output "path/to/results_centroid" --nc 5 --seed 100 -l 10 -w 5```
+
+the `-nc` parameter represents the number of clusters to be identified, `-l` represents the length of the motifs and `-w` its width, that is the number of consecutive frames to be considered as part of the motif.
+
 ## 🧬 Output
 
 The output to our methods consists of a number of structures representing typical chromatin conformational changes detected in the studied case. The files are saved in the `.cif` format with additional `.gif` visualization files.
