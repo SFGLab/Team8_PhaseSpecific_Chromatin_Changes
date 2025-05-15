@@ -38,6 +38,16 @@ graph TD;
     Cluster-->FDA(FDA);
 ```
 
+## Output
+
+The output to our methods consists of a number of structures representing typical chromatin conformational changes detected in the studied case. The files are saved in the `.cif` format with additional `.gif` visualization files.
+
+| Cluster 1  |  Cluster 2 | Cluster 3 | ... |
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+![centroid_0](https://github.com/user-attachments/assets/9f0382cb-8d35-4f7c-99ba-b37baa780f28) | ![centroid_5](https://github.com/user-attachments/assets/6b7f7820-4574-4df7-9057-84c867c3c355) | ![centroid_3](https://github.com/user-attachments/assets/ec3728d2-bd32-43f5-a6ee-427f9923727d) | ...
+
+
+
 ## 🏗 Future steps
 
 1. Parameter tuning
